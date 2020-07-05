@@ -50,5 +50,5 @@
         android:id="@+id/kakaoStoreLinkBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="카카오톡 스토어 링크 걸기"/>
+        android:text="카카오톡 플레이스토어 링크 걸기"/>
 </LinearLayout>
