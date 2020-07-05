@@ -25,7 +25,14 @@ class MainActivity : AppCompatActivity() {
 //            전화 화면으로 이동하는 Intent
             val myIntent = Intent(Intent.ACTION_DIAL, myUri)
             startActivity(myIntent)
+        }
 
+//        call버튼 이벤트
+        callBtn.setOnClickListener {
+            val inputPhoneNum = phoneNumEdt.text.toString()
+            val myUri = Uri.parse("tel:${inputPhoneNum}")
+            val myIntent = Intent(Intent.ACTION_CALL, myUri)
+            startActivity(myIntent)
         }
     }
 }
